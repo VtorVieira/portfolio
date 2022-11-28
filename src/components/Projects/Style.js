@@ -16,6 +16,7 @@ export const MainProject = styled.div`
     .logo {
       border-radius: 15px;
       width: 25em;
+      animation: up 1.3s 1;
     }
   }
 `
