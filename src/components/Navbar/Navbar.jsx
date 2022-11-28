@@ -20,11 +20,11 @@ function Navbar() {
         >
           About
         </NavLink>
-        {/* <NavLink
+        <NavLink
           to="/projects"
         >
           Projects
-        </NavLink> */}
+        </NavLink>
       </div>
       <div>
         <Contacts />
