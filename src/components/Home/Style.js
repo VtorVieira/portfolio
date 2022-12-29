@@ -5,6 +5,12 @@ export const MainBody = styled.main`
   justify-content: space-around;
   align-items: center;
   height: 85vh;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 65vh;
+  }
 `
 
 export const TextContents = styled.div`
@@ -13,6 +19,11 @@ export const TextContents = styled.div`
   flex-direction: column;
   font-size: 3.5em;
   animation: up 1.3s 1;
+
+  @media (max-width: 640px) {
+    margin-top: 10px;
+    font-size: 2em;
+  }
 `
 
 export const ImgProfile = styled.img`
@@ -28,6 +39,10 @@ export const ImgProfile = styled.img`
   opacity: 1;
   }
 }
+
+  @media (max-width: 640px) {
+    width: 15em;
+  }
 `
 
 /* skills */
@@ -48,4 +63,8 @@ export const Images = styled.img`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 640px) {
+    width: 1em;
+  }
 `

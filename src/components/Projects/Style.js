@@ -7,6 +7,11 @@ export const Container = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
+
+    @media (max-width: 640px) {
+      display: grid;
+      grid-template-columns: none;
+    }
   }
 
   .image {
@@ -17,6 +22,12 @@ export const Container = styled.div`
     height: 260px;
     margin: 20px;
     overflow: hidden;
+
+    @media (max-width: 640px) {
+      max-width: 360px;
+      height: 164px;
+      margin: 10px;
+    }
   }
 
   .image img {
@@ -49,6 +60,12 @@ export const Container = styled.div`
     opacity: 0;
     transition: 0.4s;
     transition-property: opacity, transform;
+
+    @media (max-width: 640px) {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 40px;
+    }
   }
 
   .image:hover .details h3 {
@@ -64,6 +81,12 @@ export const Container = styled.div`
     opacity: 0;
     transition: 0.6s;
     transition-property: opacity, transform;
+    
+    @media (max-width: 640px) {
+      margin: 20px 20px 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+    }
   }
 
   .image:hover .details p {
@@ -86,41 +109,17 @@ export const Container = styled.div`
   .links {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-    border-style: dotted; */
     border: 2;
   }
 
   .links a {
     margin: 0 auto;
     margin-top: 30px;
-  }
 
-  /* .more {
-    position: absolute;
-    background-color: rgba(255,255,255,0.8);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    bottom: -155px;
-    transition: 0.6s;
-    transition-property: bottom;
+    @media (max-width: 640px) {
+      margin-top: 22px;
+    }
   }
-
-  .image:hover .more {
-    bottom: -90px;
-  }
-
-  .more .icon-links {
-    color: #000;
-    font-size: 20px;
-  }
-
-  .more .icon-links a:not(:last-child) i{
-    margin-right: 20px;
-  } */
 
   @media (max-width: 1080px) {
     .image{

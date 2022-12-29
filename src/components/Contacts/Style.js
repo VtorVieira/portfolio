@@ -6,4 +6,7 @@ export const MainContacts = styled.div`
 
 export const LabelContact = styled.label`
   padding: 20px;
+  @media (max-width: 640px) {
+    padding: 20px
+  }
 `
